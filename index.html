@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taxi El Pangui</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      max-width: 360px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      color: #1877f2;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      font-size: 15px;
+    }
+
+    .android { background: #2ecc71; }
+    .web { background: #1877f2; }
+    .ios { background: #555; }
+
+    .footer {
+      font-size: 12px;
+      color: #888;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>🚖 Taxi El Pangui</h1>
+    <img src="./logo.png" alt="Taxi El Pangui" style="width:90px; margin-bottom:10px;">
+    <p>Aplicación de solicitud de taxis en tiempo real</p>
+
+    <!-- ANDROID APK -->
+    <a
+      class="btn android"
+      href="https://expo.dev/accounts/rosman1/projects/taxi-pangui/builds/e165e5e4-3fca-4b51-b36f-1982906e39d1"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      📲 Instalar en Android (APK)
+    </a>
+
+    <!-- WEB -->
+    <a
+      class="btn web"
+      href="https://taxi-pangui.vercel.app"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      🌐 Abrir versión Web
+    </a>
+
+    <!-- IOS -->
+    <a
+      class="btn ios"
+      href="https://taxi-pangui.vercel.app"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      🍎 iPhone (usar versión web)
+    </a>
+
+    <div class="footer">
+      Taxi El Pangui – somos tu mejor opción<br/>
+      Versión 1.0
+    </div>
+  </div>
+</body>
+</html>
