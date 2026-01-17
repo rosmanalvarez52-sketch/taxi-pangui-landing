@@ -12,8 +12,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
+      padding: 16px;
+      box-sizing: border-box;
     }
 
     .card {
@@ -29,6 +31,15 @@
     h1 {
       margin-bottom: 10px;
       color: #1877f2;
+    }
+
+    /* ✅ Logo más grande y responsivo */
+    .logo {
+      width: 160px;        /* antes 90px */
+      max-width: 70%;      /* evita que se salga en pantallas pequeñas */
+      height: auto;
+      display: block;
+      margin: 10px auto 14px;
     }
 
     p {
@@ -63,13 +74,16 @@
 <body>
   <div class="card">
     <h1>🚖 Taxi El Pangui</h1>
-    <img src="./logo.png" alt="Taxi El Pangui" style="width:90px; margin-bottom:10px;">
+
+    <!-- ✅ Logo más grande -->
+    <img class="logo" src="./logo.png" alt="Taxi El Pangui">
+
     <p>Aplicación de solicitud de taxis en tiempo real</p>
 
-    <!-- ANDROID APK -->
+    <!-- ANDROID APK (✅ aquí pega el link NUEVO cuando lo tengas) -->
     <a
       class="btn android"
-      href="https://expo.dev/accounts/rosman1/projects/taxi-pangui/builds/4175a00b-f1e9-48b9-9d2c-9ef307b15bf4"
+      href="https://expo.dev/accounts/rosman1/projects/taxi-pangui/builds/256515ff-8f19-4f5a-9bc2-ed9e69490ebb"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -98,7 +112,7 @@
 
     <div class="footer">
       Taxi El Pangui – somos tu mejor opción<br/>
-      Versión 1.0.1
+      Versión 1.0.2
     </div>
   </div>
 </body>
